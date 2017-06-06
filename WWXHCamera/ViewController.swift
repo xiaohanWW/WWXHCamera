@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController,WWXHCameraViewControllerDelegate {
 
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +21,7 @@ class ViewController: UIViewController,WWXHCameraViewControllerDelegate {
     }
     
     func cameraViewController(_: WWXHCameraViewController, didFinishPickingImage image: UIImage) {
-        // 这里获取到图片
+        // 这里获取到图片 然后可以做些操作...
     }
     
 }

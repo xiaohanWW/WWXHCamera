@@ -54,7 +54,7 @@ class WWXHCameraViewController: UIViewController {
     
     var delegate: WWXHCameraViewControllerDelegate?
     
-    var coverImage = UIImage(named: "zhaoxiangdingwei") // 这个遮罩图片要外部传
+    var coverImage = UIImage(named: "zhaoxiangdingwei") // 这个遮罩图片一般是外部传 在demo里 我就直接写死了😁
     
     
     override func viewDidLoad() {
