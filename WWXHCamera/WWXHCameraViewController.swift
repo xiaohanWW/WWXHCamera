@@ -54,7 +54,7 @@ class WWXHCameraViewController: UIViewController {
     
     var delegate: WWXHCameraViewControllerDelegate?
     
-    var coverImage = UIImage(named: "zhaoxiangdingwei") // 这个遮罩图片一般是外部传 在demo里 我就直接写死了😁
+    var coverImage = UIImage(named: "虚线比对框") // 这个遮罩图片一般是外部传 在demo里 我就直接写死了😁
     
     
     override func viewDidLoad() {
@@ -113,7 +113,8 @@ class WWXHCameraViewController: UIViewController {
     // 设置遮罩
     func setCoverImage(image: UIImage) {
         let coverImageView = UIImageView(image: image)
-        coverImageView.center = self.view.center
+        coverImageView.center.y = self.view.center.y + 100
+        coverImageView.center.x = self.view.center.x
         self.view.addSubview(coverImageView)
     }
     
